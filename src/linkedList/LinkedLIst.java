@@ -32,6 +32,7 @@ public class LinkedLIst {
 
     }
     // deletion at end
+    // null pointer exception
     public void deleteAtEnd(){
         Node ptr = head;
         while(ptr.next.next != null){
@@ -41,6 +42,7 @@ public class LinkedLIst {
     }
 
     // deletion at beginning
+    // if else reuired
     public int deleteAtBegin(){
         Node ptr = head;
         // if list is empty
@@ -83,6 +85,7 @@ public class LinkedLIst {
     }
 
     // insert at beginning method
+    // required ?(if,else)
     public void insertAtBegin(int data){
         Node node = initializer(data);
         if(head == null){
