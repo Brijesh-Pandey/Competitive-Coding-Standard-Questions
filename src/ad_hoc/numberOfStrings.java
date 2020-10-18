@@ -27,6 +27,8 @@ Sample Output
 2
 
 Explanation: Only strings "ab" and "ba" satisfy the condition.
+ // formula is total occurenece - occurenece in which either a, b is not there
+//print((abs((26**n-24**n) - 2*(26**n-25**n)))%1000000007)
 */
 // Code
 
@@ -39,7 +41,7 @@ class Main {
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
         BigInteger n = sc.nextBigInteger();
-        // formula is total occurenece - occurenece in which either a, b is not there
+       
         //p26 - ((2 * (p25 - p24)) % mod) - p24
         BigInteger p26 = BigInteger.valueOf(26).pow(n.intValue()).mod(BigInteger.valueOf(1000000007));
         BigInteger p25 = BigInteger.valueOf(25).pow(n.intValue()).mod(BigInteger.valueOf(1000000007));
