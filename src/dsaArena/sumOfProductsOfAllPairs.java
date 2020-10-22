@@ -1,5 +1,7 @@
 package dsaArena;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 /*
 
@@ -45,6 +47,7 @@ public class sumOfProductsOfAllPairs {
                 x++;
             }
             System.out.println(sum);
+
 
         }
     }
