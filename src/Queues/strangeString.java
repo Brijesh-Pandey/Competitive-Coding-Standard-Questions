@@ -35,10 +35,28 @@ public class strangeString {
         Scanner sc = new Scanner(System.in);
         int length = sc.nextInt();
         char ch = 'a';
-        while (ch <= length){
-            System.out.println(ch);
+        Deque<Character> dq = new LinkedList<>();
+        int i = 0;
+        while (length-- > 0){
+            if(i%2 == 0){
+                dq.addFirst(ch);
+            }
+            else{
+                dq.addLast(ch);
+            }
+            if(ch == 'z'){
+                ch = 'a';
+                i++;
+                continue;
+            }
             ch++;
+            i++;
         }
+        Iterator itr = dq.iterator();
+        while(itr.hasNext()){
+            System.out.print(itr.next());
+        }
+
 
     }
 }
