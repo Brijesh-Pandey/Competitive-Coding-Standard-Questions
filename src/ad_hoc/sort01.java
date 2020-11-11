@@ -11,7 +11,8 @@ public class sort01 {
         int[] arr = new int[size];
         for(int i = 0 ; i < size ; i++){
             arr[i] = sc.nextInt();
-            count0++;
+            if(arr[i]==0)
+                count0++;
         }
         for(int i = 0 ; i < count0 ; i++){
             arr[i] = 0;

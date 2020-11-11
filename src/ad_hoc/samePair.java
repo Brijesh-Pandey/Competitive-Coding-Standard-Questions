@@ -38,7 +38,7 @@ import java.util.*; // contains Collections framework
 
 // don't change the name of this class
 // you can add inner classes if needed
-class Main {
+class samePair {
 	public static void main (String[] args) {
 		Scanner scn=new Scanner(System.in);
 		int n=scn.nextInt();
